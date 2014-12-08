@@ -1,4 +1,4 @@
 check_it
 ========
 
-Checkbox styler
+Checkbox styler.  Work in progress.

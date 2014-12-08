@@ -2,8 +2,9 @@
 	$.fn.check_it = function( options ) {
 		var object = $(this);
 		object.each(function() {
+			object.wrap('<div class="check_it"></div>')
 			object.hide();
-			object.parent().prepend('<div class="checkbox"><span class="unchecked active icon">&#xf096;</span><span class="checked hidden icon">&#xf046;</span></div>');
+			object.parent().append('<div class="checkbox"><span class="unchecked active icon">&#xf096;</span><span class="checked hidden icon">&#xf046;</span></div>');
 			$('.checkbox').click(function(){
 				if( $(this).hasClass('toggled') ) {
 					$('.checkbox .unchecked').removeClass('hidden').addClass('active');
