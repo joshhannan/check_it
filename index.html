@@ -15,6 +15,11 @@
 			$(function() {
 				$('input[type=checkbox]').check_it();
 			});
+			$(function() {
+				$('input[type=radio]').check_it({
+					input_type: 'radio'
+				});
+			});			
 		</script>
 	</head>
 	<body>
@@ -38,22 +43,32 @@
 				</div><!---/block-->
 				<form class="contact_form block">
 					<div class="block">
-						<input type="text" placeholder="Name" />
+						<input type="text" placeholder="Name" tabindex="1" />
 					</div><!--/block-->
 					<div class="block">
-						<input type="email" placeholder="Email" />
+						<input type="email" placeholder="Email" tabindex="2" />
 					</div><!--/block-->
 					<div class="block">
-						<input type="text" placeholder="Title" />
+						<input type="text" placeholder="Title" tabindex="3" />
 					</div><!--/block-->
 					<div class="block">
-						<texatrea placeholder="Name"></textarea>
+						<textarea placeholder="Name" tabindex="4"></textarea>
 					</div><!--/block-->
 					<div class="block">
-						<input type="checkbox" name="choice" /><label>Yes</label>
-						<input type="checkbox" name="choice" /><label>No</label>
-						<input type="checkbox" name="choice" /><label>Yes</label>
-						<input type="checkbox" name="choice" /><label>No</label>
+						<ul>
+							<li class="omit block"><input type="checkbox" name="choice" tabindex="5" /><label>Yes</label></li>
+							<li class="omit block"><input type="checkbox" name="choice" tabindex="6" /><label>No</label></li>
+							<li class="omit block"><input type="checkbox" name="choice" tabindex="7" /><label>Yes</label></li>
+							<li class="omit block"><input type="checkbox" name="choice" tabindex="8" /><label>No</label></li>
+						</ul>
+					</div><!--/block-->
+					<div class="block">
+						<ul>
+							<li class="omit block"><input type="radio" name="choice" tabindex="9" /><label>Yes</label></li>
+							<li class="omit block"><input type="radio" name="choice" tabindex="10" /><label>No</label></li>
+							<li class="omit block"><input type="radio" name="choice" tabindex="11" /><label>Yes</label></li>
+							<li class="omit block"><input type="radio" name="choice" tabindex="12" /><label>No</label></li>
+						</ul>
 					</div><!--/block-->
 				</form><!--/contact_form-->
 			</div><!--/container-->

@@ -107,6 +107,7 @@ body { font-size: 16px; line-height: 1em; font-family: $text; color: $white; bac
 }
 .check_it {
 	background: $black; width: 20px; height: 20px; position: relative; float: left; margin: 0 10px 0 0;
+	&:focus { box-shadow: 0px 0px 10px $white; }
 	&.checked {
 		.checked { display: block; }
 		.unchecked { display: none; }
@@ -166,7 +167,7 @@ body { font-size: 16px; line-height: 1em; font-family: $text; color: $white; bac
 			&:focus { outline: none; box-shadow: 0px 0px 5px $light_black; }
 		}
 		textarea { resize: none; }
-		&.omit label { position: relative; top: auto; left: auto; height: auto; }
+		&.omit label { position: relative; top: auto; left: auto; height: auto; @include opacity(1); }
 	}
 	.thirds { width: 100%; float: left; }
 	.thirds .block { width: 31%; margin: 0 1%; }
