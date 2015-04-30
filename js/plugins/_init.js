@@ -1,0 +1,7 @@
+// Scripts - Client
+
+$(function(){
+
+	// Init -
+
+});
