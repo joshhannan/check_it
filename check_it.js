@@ -93,6 +93,7 @@
 							$(this).find('input').attr('checked', true);
 						}
 					}
+					return false;
 				}
 			});
 			$('.'+settings.input_type+'_it').click(function(e) {
